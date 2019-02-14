@@ -1,6 +1,8 @@
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Documentacion
+---
+
 ## Software Instalacion Modulos
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 Obligatorios
 �	Java versi�n jdk1.8.0_144
@@ -17,9 +19,9 @@ Recomendados
 variable de entorno "JAVA_HOME" valor: "C:\Program Files\Java\jdk1.8.0_144"
 Variable de entorno "path" agregar al valor ";%JAVA_HOME%\bin"
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Instalacion Modulos
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 0. Entrar a la carpeta del modulo a clonar
 1. entrar a https://bitbucket.org/dashboard/overview
@@ -54,9 +56,9 @@ Variable de entorno "path" agregar al valor ";%JAVA_HOME%\bin"
 5.	Aplique las configuraciones:
 6.	Recompile la aplicaci�n �Build -> Make Project� (Shift + F9). Listo!
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Instalacion Scrapchat
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 Scrapchat snapchat mapchat
 0. abrir el cmd con permisos de administrador
@@ -65,9 +67,9 @@ Scrapchat snapchat mapchat
 2. elegir  la version jdk 1.8 144	
 3. tocar en el boton Replace 
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ##  Comandos GIT
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 -Configuracion GIT en Sourcetree:
 
 git config --global http.proxy http://pmolina:Messi2022@araprx1.rsa-arg.com.ar:3128
@@ -76,9 +78,9 @@ git config --global https.proxy http://pmolina:Messi2022@araprx1.rsa-arg.com.ar:
 -Rollback de un commit en una rama: 
 git reset --soft HEAD~;
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## URLs
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 LOCAL: 
 http://localhost:8280/ab
@@ -100,9 +102,9 @@ https://i-preproducciongestion.segurossura.com.ar/pc/PolicyCenter.do
 PROD:
 https://i-gestion.segurossura.com.ar/pc/PolicyCenter.do
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Como Cargar peque�o
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 1. Entro url policy
 2. alt shit t
@@ -110,9 +112,9 @@ https://i-gestion.segurossura.com.ar/pc/PolicyCenter.do
 4. click en peque�o (localidades, cuenta, polizas)
 5. Modificar la fecha del sistema para adelante. para cambiarla dropdb. 
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Como Cargar archivo de la muerte.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 1. cargar el peque�o.
 2. desde policy: administracion, utilidades, importar datos
@@ -122,16 +124,16 @@ https://i-gestion.segurossura.com.ar/pc/PolicyCenter.do
 
 Establecer nivel de registro: para marcar el nivel del logeo. 
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Refacturacion
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 clase: UpdateTermBach sura
 si se agrega una columna o una entidad: ir al arachivi extension.properties y subir un numerito en la version
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Como agregar una rama para desarrollar.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 1. Entrar al bitbucket.
 2. Entrar a PC o al modulo a desarrollar.
 3. Darle click en el + 
@@ -143,9 +145,9 @@ si se agrega una columna o una entidad: ir al arachivi extension.properties y su
 9. Ir a remotes/origin/bugfix y buscar el nombre del branch creado.
 10. Doble click ahi y ok en el cartel que aparece.
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Como ver en CA las tareas.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 1. logearse en rally1.rallydev.com
 2. seleccionar Sura Argentina - R1 - Stabilization
@@ -156,9 +158,9 @@ si se agrega una columna o una entidad: ir al arachivi extension.properties y su
 6.1 Si se le da click a la historia en la columna de la derecha, esta el excel con mas informacion 
 7. Si faltan horas ir a la rueda de la derecha y copiar la tarea con la cantidad de horas estimadas que faltan para terminar.
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Para entrar a Product designer (widget):
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 en una ventana de cmd (la de PC)
 cd productdesigner
@@ -175,9 +177,9 @@ Luego de agregar los valores:
 4. Comitt
 5. Rueda Syncronize system table
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Generar PR
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 Cosas a tener en cuenta antes de generar el PR:
 1. Los metodos, clases, entidades, etc creadas deben tener SURA al final
 2. Los IF por mas que sean de una linea deben tener { } (llaves)
@@ -195,26 +197,26 @@ Cosas a tener en cuenta antes de generar el PR:
 9. Revisar conflictos (aparecen en amarillos con una C), bajar la ultima version del release (pull) y resolver los conflictos locales y realizar todos los pasos nuevamente. 
 10. Volver al sourcetree, generar un nuevo pull request para desarrollo siguiendo los mismos pasos desde el pull request.
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Mergear release con el branch.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 1. bajar el nuevo release
 2. doble click en el release para bajarlo
 3. boton derecho en el release y merge dentro del current branch
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Hotkeys
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 1. Alt+Shift+E navegador, te lleva al código
 2. Alt+Shift+L recargar código en el navegador
 3. Shift+ShifT Buscar archivos en la solución
 4. Ctrl+Shift+F Buscar código en la solución
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Rating engine
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 entra por la clase, ordena las coberturas y por cada una llama una rutina. 
 las rutinas se van ejecutando, y cada una llama una o mas tablas.
@@ -225,9 +227,9 @@ hay un libro por cada ramo.
 buscar rutina submissionfee
 
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Replicar Libro de Tasas en los diferentes ambientes
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 1. Administracion --> Clasificacion --> Libro de tasas.
 2. Buscar --> Motor -- Promover a Etapa
 3. Sino funciona
@@ -240,26 +242,26 @@ buscar rutina submissionfee
 9. Importar el xml.
 10. Promover etapa (en dev no hace falta)
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Procesos Batch:
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 PolicyChangeCertificateBatchSura.gs
 
 1. alt shit t
 2. Herramientas del servidor.
 3. Informacion de proceso por lotes.
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Para Cambiar la fecha de sistema:
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 1. alt shit t
 2. Reloj de Sistema
 3. Prueba de reloj 
 4. Cerrar sesion e iniciar.
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Para cambiar el estado de una poliza a mora:
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 1. Pasar la fecha del sistema a 1 dia despues de la fecha de facturacion
 2. Correr el batch de factura vencida primero y despues factura.
@@ -269,9 +271,9 @@ avanzo 1 dia despues de la fecha de vencimiento de la factura y otra vez corro l
 
 ahi deberia aparecer la mora
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Cargar libro de tasas
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 primero  actualizar  clase DataLoaderProducerCodeSura, linea 115 y cambiar por "su" (hay una manera de ejecutar esto por pantalla tambien )
 
 1. Ejecutar en el scratchpad:
@@ -295,24 +297,24 @@ pc\modules\configuration\config\resources\systables\sura_producercode_info.xml
 
 pc\modules\configuration\config\resources\systables\sura_producer_info.xml
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Error oferta no valida: 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 Si es en local: Cargar libro de tasas
 Alt + shift + t 
 Reload AUTO Ratebook (SURA) --> ejecutar
 
 Si es en QA: cargar la cotizacion del dia en al tabla tcambio de intergacion a la fecha a la que se movio qa
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Agregar Parametro de Secuencia.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 Se agrega por el codigo: ScriptParameters.xml y ScriptParametersEnhacement.gsx
 Se utiliza: ScriptParameters.NombreDelScriptParameter
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Error de validacion al subir el codigo
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 1. Navegar en el IE/Chrome el siguente archivo
 	C:/gw/PC/modules/tools/static_analysis/reports/pc-CodeNarcReport.html
 	
@@ -321,9 +323,9 @@ Se utiliza: ScriptParameters.NombreDelScriptParameter
 4. Modificar y volver a subir.
 5. Profit	
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Renovar
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 1. Tiene que estar levantado billing y claim
 2. Parado en el resumen de la poliza, Nuevo --> Renovar
 Pagar la poliza en billing center: 
@@ -339,9 +341,9 @@ Pagar la poliza en billing center:
 
 Si se renovo con error, se puede poner la poliza como no renovable y luego Retirar la transaccion.
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Resolver conflicto
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 0. Copiarse las modificaciones que dan conflictos a un txt.
 1. Actualizar develop o la rama a mergear.
 2. Pararse en la rama del desarrollo.
@@ -349,9 +351,9 @@ Si se renovo con error, se puede poner la poliza como no renovable y luego Retir
 4. En file status se muestran los conflictos, botton derecho al archivo y seleccionar "Resolve conflicts --> Using Theirs. 
 5. Ir al studio y modificar los archivos luego de que recarguen pegando lo salvado previamente en el txt.
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Crear parches
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 1. Crear una rama local basada en la rama a la que se van a subir los cambios
 2. Pararse en develop y buscar el commit 
 3. Buscar el commit que se quiere parchear
@@ -363,17 +365,17 @@ Si se renovo con error, se puede poner la poliza como no renovable y luego Retir
 9. Luego de aplicar todos los parches, compilar y comitear.
 10. Generar el PR a la rama deseada.
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Ver Log 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 1. alt shift  t
 2. Ver registros
 3. buscar archivo pc-log.log
 	      archivo plugins.log esta el job de endoso masivo
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Modificacion de UW por codigo.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 -systables.xml contiene la base de .xml donde estan las configuraciones de las coberturas.
 en coerableUtil o linea + underwriterEValuatorSura.gs esta el codigo de las reglas.
 
@@ -400,17 +402,17 @@ commit
 esperar que desaparezca
 chequear si en el sourcetree fue bien
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Polizas Madres	
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 -Plan enlatado: Cencosud 1159
 La vigencia de la poliza madre debe comenzar un primero del mes.
 
 -el job que corre a fin de mes y genera los endosos se llama: "Endoso P�lizas Madres" 
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Reglas de suscripcion (AAH : Edad entre 14 y 65)  / Perfiles de autoridad (BU 2A, BU2C, etc)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 Administracion --> Configuracion Comercial --> Reglas Comerciales --> Reglas de Suscripcion.
 
 Son los UW, se pueden crear por codigo o por la aplicacion.
@@ -434,18 +436,18 @@ Para importar la Regla de suscripcion:
 5. Importacion completa
 6. Seleccionar y Aplicar Seleccionado
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 ## Usuarios
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 sfavelukes 2A
 galvarez 1E 
 aburnes 1C
 dgaudenzi 2E
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Cola de Mensajes
-----------------------------------------------------------------------------------------------------------------------------------
+---
+## Cola de Mensajes
+---
 Administracion-->supervision-->Cola de Mensajes
 
 
@@ -455,7 +457,7 @@ calculateMinMaxPercents
 
 
 
-----------------------------------------------------------------------------------------------------------------------------------
+---
 
 
 PATENTE: EIG202
